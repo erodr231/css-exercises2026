@@ -35,8 +35,8 @@ body{
 }
 
 .header{
-  font-weight: bold;
-  font-size: 30px;
+  font-weight: 900;
+  font-size: 32px;
   padding: 15px;
 }
 
@@ -52,14 +52,14 @@ body{
 
 .sidebar{
   padding: 10px;
-  min-width: 275px;
-  flex-grow: 1;
+  min-width: 300px;
+  flex: 1 0;
 }
 
 .cards-section{
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 48px;
   gap: 30px;
 }
 
@@ -73,6 +73,7 @@ ul{
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 24px;
 }
 
 ul li{

@@ -5,13 +5,13 @@ body {
 }
 
 .header {
-  height: 72px;
+  /* height: 72px; */
   background: darkmagenta;
   color: white;
 }
 
 .footer {
-  height: 72px;
+  /* height: 72px; */
   background: #eee;
   color: darkmagenta;
 }
@@ -29,27 +29,43 @@ body {
 }
 
 /* my work starts here */
+body{
+  display: flex;
+  flex-direction: column;
+}
 
 .header{
   font-weight: bold;
   font-size: 30px;
+  padding: 15px;
+}
+
+.footer{
+  text-align: center;
+  padding: 30px;
 }
 
 .main-content{
   display: flex;
+  flex: 1;
 }
 
 .sidebar{
   padding: 10px;
+  min-width: 275px;
+  flex-grow: 1;
 }
 
 .cards-section{
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 30px;
 }
 
 .card{
-  padding: 10px;
+  padding: 15px;
+  width: 300px;
 }
 
 
@@ -57,6 +73,10 @@ ul{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+ul li{
+  padding: 10px 5px; 
 }
 
 a{

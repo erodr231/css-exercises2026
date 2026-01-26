@@ -24,11 +24,12 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
 /* my work starts here */
 body{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .header, .footer{
@@ -39,7 +40,7 @@ body{
 
 a{
   text-decoration: none;
-  color: inherit;
+  color: #666;
 }
 
 .left-links, .right-links {
@@ -53,14 +54,17 @@ a{
 }
 
 .content{
+  flex: 1;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
 button{
-  padding: 8px;
+  padding: 8px 16px;
 }
 
 .footer{
